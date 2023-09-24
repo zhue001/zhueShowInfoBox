@@ -25,7 +25,7 @@ zhue.showInfoBox = function(t, e) {
   e.buttons.forEach(function(t) {
     var e;
     if (t.linkhref ? (e = document.createElement("a"), e.setAttribute("href", t.linkhref), 
-    e.setAttribute("target", t.linkTarget || "_blank")) : e = document.createElement("button"), 
+    e.setAttribute("target", t.linktarget || "_blank")) : e = document.createElement("button"), 
     e.style.backgroundColor = t.bgColor, e.style.padding = "1mm", e.style.marginRight = "1mm", 
     e.style.color = t.textColor || "#000000", e.style.border = "none", e.style.cursor = "pointer", 
     e.style.display = "inline-flex", e.style.alignItems = "center", e.addEventListener("mouseover", function() {
