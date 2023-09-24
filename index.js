@@ -1,4 +1,5 @@
-function showInfoBox(t, e) {
+if (!window.zhue) window.zhue = {}
+zhue.showInfoBox = function(t, e) {
   function n(t) {
     var e = t.replace("#", ""), n = parseInt(e.substr(0, 2), 16), r = parseInt(e.substr(2, 2), 16), o = parseInt(e.substr(4, 2), 16), a = 255 - n, l = 255 - r, s = 255 - o, i = "#" + a.toString(16).padStart(2, "0") + l.toString(16).padStart(2, "0") + s.toString(16).padStart(2, "0");
     return i;
