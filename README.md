@@ -1,6 +1,6 @@
 # 使用
 ```javascript
-zhue.showInfoBox(父元素,选项)
+zhue.showInfoBox(选项,父元素)
 ```
 ## 选项
 * title: 标题
@@ -20,7 +20,7 @@ zhue.showInfoBox(父元素,选项)
     * linktarget: 链接方法 (可选)
 ## 示例
 ```javascript
-zhue.showInfoBox(document.body, {
+zhue.showInfoBox({
   title: "Hello World",
   content: "你好世界",
   icon: "./hello_world.png",
@@ -36,7 +36,8 @@ zhue.showInfoBox(document.body, {
       linkhref: "helloworld",
       icon: "hi.png",
       bgColor: "#123456",
-      linktarget: "_self"
+      linktarget: "_self",
+      iconsize: [8,8]
     },
     {
       name: "帮助",
@@ -45,4 +46,5 @@ zhue.showInfoBox(document.body, {
       iconsize: [16, 16]
     }
   ]
-})
+}, document.body)
+```
